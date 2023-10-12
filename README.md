@@ -21,7 +21,8 @@ Create two subnets; one public subnet for the Application Gateway and one privat
 
 
 ### Create a Network Security Group (NSG)
-Used for network filtering at the subnet level and VM level, acts as a gatekeeper for Subnets, Defines who can connect in and out of subnet
+> Used for network filtering at the subnet level and VM level, acts as a gatekeeper for Subnets, Defines who can connect in and out of subnet
+> 
 Create a Public NSG and associate it with the Public Subnet, allowing all HTTP/S traffic on ports 443/80 into the subnet and then create another Private NSG, associate it with the Private Subnet, Blocking all traffic from the internet.
 
 > Public NSG Inbound/Outbound Security Rules
@@ -60,11 +61,15 @@ sudo systemctl restart apache2
 
 Application Gateway 5 main configurations:
 
-Backend pools (This represents the VMs the Application Gateway will send traffic to)
-HTTP settings (Settings for the incoming HTTP Requests)
-Frontend IP Configurations (The public IP exposed by the Application Gateway)
-Listeners (Receives requests on a specific port and protocol)
-Rules (rules connecting Listener with Backend pool)
+Backend pools - (This represents the VMs the Application Gateway will send traffic to)
+
+HTTP settings - (Settings for the incoming HTTP Requests)
+
+Frontend IP Configurations - (The public IP exposed by the Application Gateway)
+
+Listeners - (Receives requests on a specific port and protocol)
+
+Rules - (rules connecting Listener with Backend pool)
 
 
 ![Create Application Gateway](./assets/vid4less.mp4)
