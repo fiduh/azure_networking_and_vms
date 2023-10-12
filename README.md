@@ -23,7 +23,15 @@ Create two subnets; one public subnet for the Application Gateway and one privat
 
 ### Create a Network Security Group (NSG)
 Used for network filtering at the subnet level and VM level, acts as a gatekeeper for Subnets, Defines who can connect in and out of subnet
-Create a Public SG and associate it with the Public Subnet, allowing all HTTP/S traffic on ports 443/80 into the subnet and then create another Private SG, associate it with the Private Subnet, Blocking all traffic from the internet.
+Create a Public NSG and associate it with the Public Subnet, allowing all HTTP/S traffic on ports 443/80 into the subnet and then create another Private NSG, associate it with the Private Subnet, Blocking all traffic from the internet.
+
+Public NSG Inbound/Outbound Security Rules
+
+![Public NSG](./assets/)
+
+Private NSG Inbound/Outbound rules
+
+![Private NSG](./assets/)
 
 ### Create an Application Gateway
 Traffic distribution for HTTP (web) traffic (Layer 7), offering various traffic routing rules and SSL termination.
