@@ -17,6 +17,7 @@ Emulation of physical networking and a logically isolated section in Azure, VNet
 
 ### Create Subnet
 Create two subnets; one public subnet for the Application Gateway and one private subnet for the webserver virtual machine 
+
 ![Create Subnets](./assets/subnets.png)
 
 
