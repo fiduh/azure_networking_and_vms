@@ -15,5 +15,9 @@ Logical grouping of VMs, to aviod manually adding their individual ip addresses 
 
 ### Create an Application Gateway
 Traffic distribution for HTTP (web) traffic (Layer 7), offering various traffic routing rules and SSL termination.
+This should be created in a Subset that allows for public traffic.
+
+### Create a Virtual Machine (VM)
+Public IP address shouldn't be assigned to it, This should be in a private subnet without internet access. Only the Application gateway should be allowed to have access to it. 
 
 
