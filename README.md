@@ -10,7 +10,7 @@
 ![Create Resource Group](./assets/resource-group.png)
 
 ### Create a Virtual Network (VNET)
-> Emulation of physical networking and a logically isolated section in Azure, VNets can be further Segmented using Subnets and protected using NSG
+> Emulation of physical networking and a logically isolated section in Azure, VNets can be further Segmented using Subnets and protected using Network Security Group(NSG)
 
 ![Create VNet](./assets/create-vnet.png)
 
