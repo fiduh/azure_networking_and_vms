@@ -58,7 +58,13 @@ sudo systemctl restart apache2
 Traffic distribution for HTTP (web) traffic (Layer 7), offering various traffic routing rules and SSL termination.
 This should be created in a Subset that allows for public traffic (Public Subnet).
 
-Application Gateway 5 main configurations
+Application Gateway 5 main configurations:
+
+Backend pools (This represents the VMs the Application Gateway will send traffic to)
+HTTP settings (Settings for the incoming HTTP Requests)
+Frontend IP Configurations (The public IP exposed by the Application Gateway)
+Listeners (Receives requests on a specific port and protocol)
+Rules (rules connecting Listener with Backend pool)
 
 
 ![Create Application Gateway](./assets/.png)
