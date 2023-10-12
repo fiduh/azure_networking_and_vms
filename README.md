@@ -33,11 +33,17 @@ Private NSG Inbound/Outbound rules
 
 ![Private NSG](./assets/private-nsg.png)
 
+### Create a Virtual Machine (VM)
+A public IP address shouldn't be assigned to the VM, This should be in a private subnet without internet access. Only the Application gateway should be allowed to have access to it. 
+
+![Create VM](./assets/.png)
+
+
 ### Create an Application Gateway
 Traffic distribution for HTTP (web) traffic (Layer 7), offering various traffic routing rules and SSL termination.
-This should be created in a Subset that allows for public traffic.
+This should be created in a Subset that allows for public traffic (Public Subnet).
 
-### Create a Virtual Machine (VM)
-A public IP address shouldn't be assigned to it, This should be in a private subnet without internet access. Only the Application gateway should be allowed to have access to it. 
+Application Gateway 5 main configurations
+
 
 
