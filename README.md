@@ -3,6 +3,7 @@ Azure virtual networking end-to-end and virtual machines
 
 ### Create a Resource Group
 Logical grouping of resources provisioned in Azure (allows for management and deletion of multiple resources at the same time) 
+![Create Resource Group](./assets/resource-group.png)
 
 ### Create a Virtual Network (VNET)
 Emulation of physical networking and a logically isolated section in Azure, VNets can be further Segmented using Subnets and protected using NSG
