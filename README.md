@@ -72,7 +72,7 @@ Listeners - (Receives requests on a specific port and protocol)
 Rules - (rules connecting Listener with Backend pool)
 
 
-![Create Application Gateway](./assets/vid4less.mp4)
+![Create Application Gateway](./assets/vid-cp.mp4)
 
 
 
