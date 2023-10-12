@@ -34,16 +34,34 @@ Private NSG Inbound/Outbound rules
 ![Private NSG](./assets/private-nsg.png)
 
 ### Create a Virtual Machine (VM)
-A public IP address shouldn't be assigned to the VM, This should be in a private subnet without internet access. Only the Application gateway should be allowed to have access to it. 
+Create a VM in the Private Subnet without internet access, a public IP address shouldn't be assigned to the VM. Only the Application Gateway should be allowed to have access to it. 
 
-![Create VM](./assets/.png)
+Add the code below to the User data script to install the Apache server at boot time.
 
+```
+#!/bin/bash
+sudo apt-get update -y
+sudo apt-get install apache2 -y
+sudo ufw allow 'Apache'
+sudo systemctl enable apache2
+
+sudo cat > ~/index.html << EOF
+<h1>We are Live on Azure Cloud</h1> 
+EOF
+
+sudo mv ~/index.html /var/www/html
+sudo systemctl restart apache2
+
+```
 
 ### Create an Application Gateway
 Traffic distribution for HTTP (web) traffic (Layer 7), offering various traffic routing rules and SSL termination.
 This should be created in a Subset that allows for public traffic (Public Subnet).
 
 Application Gateway 5 main configurations
+
+
+![Create Application Gateway](./assets/.png)
 
 
 
