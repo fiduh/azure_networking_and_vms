@@ -6,8 +6,11 @@ Azure virtual networking end-to-end and virtual machines
 
 ![Create Resource Group](./assets/resource-group.png)
 
+create-vnet.png
 ### Create a Virtual Network (VNET)
 Emulation of physical networking and a logically isolated section in Azure, VNets can be further Segmented using Subnets and protected using NSG
+
+![Create Resource Group](./assets/create-vnet.png)
 
 ### Create a Network Security Group (NSG)
 Used for network filtering at the subnet level and VM level, acts as a gatekeeper for Subnets, Defines who can connect in and out of subnet
