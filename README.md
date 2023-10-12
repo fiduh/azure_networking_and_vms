@@ -1,6 +1,9 @@
 # Azure Networking and Virtual Machines running web servers
 Azure virtual networking end-to-end and virtual machines
 
+![VNet and VM architecture on Azure](./assets/web-server-rsg.png)
+
+
 ### Create a Resource Group
 > Logical grouping of resources provisioned in Azure (allows for management and deletion of multiple resources at the same time)
 
@@ -10,7 +13,7 @@ create-vnet.png
 ### Create a Virtual Network (VNET)
 Emulation of physical networking and a logically isolated section in Azure, VNets can be further Segmented using Subnets and protected using NSG
 
-![Create Resource Group](./assets/create-vnet.png)
+![Create VNet](./assets/create-vnet.png)
 
 ### Create Subnet
 Create two subnets; one public subnet for the Application Gateway and one private subnet for the webserver virtual machine 
