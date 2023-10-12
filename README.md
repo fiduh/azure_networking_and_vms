@@ -27,11 +27,11 @@ Create a Public NSG and associate it with the Public Subnet, allowing all HTTP/S
 
 Public NSG Inbound/Outbound Security Rules
 
-![Public NSG](./assets/)
+![Public NSG](./assets/public-nsg.png)
 
 Private NSG Inbound/Outbound rules
 
-![Private NSG](./assets/)
+![Private NSG](./assets/private-nsg.png)
 
 ### Create an Application Gateway
 Traffic distribution for HTTP (web) traffic (Layer 7), offering various traffic routing rules and SSL termination.
