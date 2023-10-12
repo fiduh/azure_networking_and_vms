@@ -17,6 +17,8 @@ Emulation of physical networking and a logically isolated section in Azure, VNet
 
 ### Create Subnet
 Create two subnets; one public subnet for the Application Gateway and one private subnet for the webserver virtual machine 
+![Create Subnets](./assets/subnets.png)
+
 
 ### Create a Network Security Group (NSG)
 Used for network filtering at the subnet level and VM level, acts as a gatekeeper for Subnets, Defines who can connect in and out of subnet
