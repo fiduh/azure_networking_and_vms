@@ -39,7 +39,7 @@ Create a VM in the Private Subnet without internet access, a public IP address s
 > [!NOTE]
 > Add the code below to the User data script to install the Apache server at boot time.
 
-```
+```bash
 #!/bin/bash
 sudo apt-get update -y
 sudo apt-get install apache2 -y
